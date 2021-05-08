@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1" action="#" onsubmit="required()">
+        <input type="text" name="firstname" />
+        <input type="checkbox"  name="checkbox" />
+        <input type="submit" value="submit" >
+     </form>
+     <script>
+         function required()
+{
+var empt = document.forms["form1"]["firstname"].value;
+if (empt == "")
+{
+alert("Please input a Value");
+return false;
+}
+var checkme= document.forms["form1"]["checkbox"].checked;
+
+if(checkme == false)
+{
+alert('You must agree to the terms first.');
+return false;
+}
+else{
+
+return true;
+}
+
+}
+     </script>
+</body>
+</html>

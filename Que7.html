@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fetchData(id) {
+      
+      $.ajax({  
+          url: "www.example.com/api/get/1",  
+          datatype: "JSON",  
+          type: "Get",  
+          success: function(data) {  
+             document.write(data);
+          }  
+      });  
+      
+  }
+    </script>
+</body>
+</html>
